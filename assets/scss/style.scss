@@ -1,157 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(70, 175, 236, 0.963);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  .logo {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+
+    h2 {
+      font-family: "Londrina Outline", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      padding: 10px 15px;
+      color: white;
+      font-size: 45px;
+      position: relative;
+      &::before {
+        content: "";
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 10px;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-radius: 3px;
+      }
+      &::after {
+        content: "";
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 10px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-radius: 3px;
+      }
+    }
+    p {
+      font-family: "Coming Soon", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      margin: -9px 26px;
+      padding: 0 0 5px;
+      text-align: center;
+      color: white;
+
+      &::before {
+        content: "";
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 15px;
+        height: 10px;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-radius: 3px;
+      }
+      &::after {
+        content: "";
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15px;
+        height: 10px;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-radius: 3px;
+      }
+    }
   }
-  body{
-    background-color: rgba(70, 175, 236, 0.963);
+  h1 {
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    text-align: center;
+    padding: 10px;
+  }
+  .middle {
+    .text {
+      display: flex;
+
+      h3 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 32px;
+        padding: 20px;
+        margin-left: 120px;
+        &:nth-child(2) {
+          margin-left: 260px;
+        }
+      }
+    }
+    .logos {
+      padding: 15px 160px;
+      display: flex;
+      justify-content: space-between;
+
+      .socials {
+        display: flex;
+        gap: 25px;
+        a {
+          svg {
+            fill: white;
+            width: 90px;
+            height: 70px;
+          }
+          &:nth-of-type(2) {
+            svg {
+              width: 80px;
+              height: 60px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .pdf {
+        display: flex;
+        margin-right: 140px;
+        svg {
+          fill: white;
+          width: 80px;
+          height: 60px;
+        }
+        h3 {
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 100;
+          font-size: 25px;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+  .footer {
     display: flex;
     flex-direction: column;
-    padding: 20px 50px ;
-    .logo{
-        position: relative;
-        display: inline-block;
-        width: 190px;
-    
-        h2{
-            font-family: "Londrina Outline", sans-serif;
-            font-weight: 600;
-            font-style: normal;
-            padding:10px 15px;
-            color: white;
-            font-size: 45px;
-            position: relative;
-            &::before{
-                content: '';
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 15px;
-                height: 10px;
-                border-top: 2px solid white;
-                border-left: 2px solid white;
-                border-radius: 3px;
-            }
-            &::after{
-                content: '';
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 15px;
-                height: 10px;
-                border-top: 2px solid white;
-                border-right: 2px solid white;
-                border-radius: 3px;
-            }
-        }
-        p{
-            font-family: "Coming Soon", cursive;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 13px;
-           margin: -9px 26px;
-           padding: 0 0 5px;
-           text-align: center;
-            color: white;
-          
-            &::before{
-                content: '';
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 15px;
-                height: 10px;
-                border-bottom: 2px solid white;
-                border-left: 2px solid white;
-                border-radius: 3px;
-            }
-            &::after{
-                content: '';
-                content: '';
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 15px;
-                height: 10px;
-                border-bottom: 2px solid white;
-                border-right: 2px solid white;
-                border-radius: 3px;
-            }
-        }
+    h3 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      font-size: 25px;
+      margin-top: 20px;
     }
-    h1{
-        color: white;
-        font-weight: 700;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 65px;
-        text-align: center;
-        padding: 10px;
-    }
-    .middle{
-        h3{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 100;
-            font-size: 32px;
-            padding: 20px 80px;
-        }
-        .logos{
-            padding: 15px 100px;
-            display: flex;
-            justify-content: space-between;
-            
-            .socials{
-                display: flex;
-                gap: 25px;
-                svg{
-                    fill: white;
-                    width: 90px;
-                    height: 70px;
-                    &:nth-child(2){
-                        width: 80px;
-                        height: 60px;
-                        margin-top: 5px;
-                    }
-                }
-            }
-            .pdf{
-                svg{
-                    fill: white;
-                    width: 80px;
-                    height: 60px;
-                    margin-right: 400px;
-                }
-            }
-        }
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        h3{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
-            text-align: center;
-            font-size: 25px;
-            margin-top: 20px;
-        }
-        .boxes{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap: 50px;
-           justify-content: space-between;
-            margin: 20px auto 0;
-            .box{
-                border: 3px solid white;
-                border-radius: 10px;
-                width: 230px;
-                height: 100px;
-                background-color: rgba(68, 169, 227, 0.871) ;
-            }
-        }
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 50px;
+      justify-content: space-between;
+      margin: 20px auto 0;
+      .box {
+        border: 3px solid white;
+        border-radius: 10px;
+        width: 230px;
+        height: 100px;
+        background-color: rgba(68, 169, 227, 0.871);
+      }
     }
   }
+}
