@@ -23,6 +23,7 @@ body .logo h2 {
   color: white;
   font-size: 45px;
   position: relative;
+  cursor: default;
 }
 body .logo h2::before {
   content: "";
@@ -57,6 +58,7 @@ body .logo p {
   padding: 0 0 5px;
   text-align: center;
   color: white;
+  cursor: default;
 }
 body .logo p::before {
   content: "";
@@ -89,6 +91,7 @@ body h1 {
   font-size: 65px;
   text-align: center;
   padding: 10px;
+  cursor: default;
 }
 body .middle .text {
   display: flex;
@@ -100,6 +103,7 @@ body .middle .text h3 {
   font-size: 32px;
   padding: 20px;
   margin-left: 120px;
+  cursor: default;
 }
 body .middle .text h3:nth-child(2) {
   margin-left: 260px;
@@ -138,6 +142,7 @@ body .middle .logos .pdf h3 {
   font-weight: 100;
   font-size: 25px;
   padding: 20px 10px;
+  cursor: default;
 }
 body .footer {
   display: flex;
@@ -150,6 +155,7 @@ body .footer h3 {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
+  cursor: default;
 }
 body .footer .boxes {
   display: grid;
